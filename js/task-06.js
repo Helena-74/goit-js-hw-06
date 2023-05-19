@@ -34,28 +34,17 @@
     const inputLength = input.value.length;
 
     if (inputLength === requiredLength) {
-      input.classList.remove('#validation-input.invalid');
-      input.classList.add('#validation-input.valid');
+      input.classList.remove('invalid');
+      input.classList.add('valid');
     } else {
-      input.classList.remove('#validation-input.valid');
-      input.classList.add('#validation-input.invalid');
+      input.classList.remove('valid');
+      input.classList.add('invalid');
     }
   }
 
   input.addEventListener('blur', handleInputBlur);
 
 
-
-
-// <script>
-//     const inputEl = document.querySelector('#name-input');
-//     const outputEl = document.querySelector('#name-output');
-
-//     inputEl.addEventListener('input', event => {
-//       const name = event.target.value;
-//       outputEl.textContent = name ? name : 'Anonymous';
-//     });
-//   </script>
 
   // const inputEl = document.querySelector('#validation-input');
   // const length = inputEl.getAttribute('data-length');
